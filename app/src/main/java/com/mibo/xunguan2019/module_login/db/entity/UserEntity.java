@@ -9,7 +9,7 @@ import android.arch.persistence.room.PrimaryKey;
  * Author liuyangchao
  * Date on 2019/5/10.10:11
  */
-@Entity(tableName = "uuser")
+@Entity(tableName = "user_table")
 public class UserEntity {
 
     @PrimaryKey(autoGenerate = true)

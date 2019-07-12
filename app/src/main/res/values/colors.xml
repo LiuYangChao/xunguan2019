@@ -3,4 +3,56 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="colorLogo">#1C9CA3</color>
+    <color name="colorLoginBtn1">#5CC7BA</color>
+    <color name="colorLoginBtn2">#1C9DA1</color>
+
+    <color name="bg_start">#5ABDC7</color>
+    <color name="bg_end">#3EA8B0</color>
+    <color name="bg_color">#FFFFFF</color>
+    <color name="bg_gray">#E5E5E5</color>
+
+    <color name="cell_background_color">#ffffff</color>
+    <color name="cell_text_color">#1f1f1f</color>
+    <color name="header_line_color">@android:color/holo_red_light</color>
+
+
+    <!-- Material Design TableView Colors -->
+    <color name="md_cell_text_color">#1f1f1f</color>
+    <color name="md_column_header_text_color">#696969</color>
+    <color name="md_highlight_row_background_color">#EEEEEE</color>
+    <color name="md_selected_background_color">#F5F5F5</color>
+    <color name="md_cell_line_color">#dbdbdb</color>
+
+    <!-- 标准配色 -->
+    <color name="main1">#26a6ff</color>
+    <color name="main2">#0086f1</color>
+
+    <color name="normal1">#fe3950</color>
+    <color name="normal2">#ffc746</color>
+    <color name="normal3">#71e46b</color>
+    <color name="normal4">#787adf</color>
+    <color name="normal5">#ffa95e</color>
+
+    <color name="text1">#333333</color>
+    <color name="text2">#666666</color>
+    <color name="text3">#999999</color>
+    <color name="text4">#b5b5b5</color>
+    <color name="text5">#dcdcdc</color>
+    <color name="text6">#ffffff</color>
+
+    <color name="login_bg1">#708D93</color>
+    <color name="login_bg2">#516381</color>
+    <color name="login_bg3">#D0E0EF</color>
+    <color name="login_bg4">#9AB0D2</color>
+    <color name="login_bg5">#677589</color>
+
+    <color name="login_bg6">#3D425A</color>
+    <color name="login_bg7">#FDFFFF</color>
+    <color name="login_bg8">#7884B4</color>
+    <color name="login_bg9">#40B49A</color>
+    <color name="login_bg10">#E05A48</color>
+
+
 </resources>

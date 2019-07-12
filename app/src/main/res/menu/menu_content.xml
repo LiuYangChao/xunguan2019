@@ -1,0 +1,24 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_menu"
+        android:title="选项卡"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="ifRoom">
+
+        <menu>
+            <item
+                android:id="@+id/action_1"
+                android:icon="@android:drawable/ic_menu_mapmode"
+                android:title="保存"
+                app:showAsAction="ifRoom"/>
+            <item
+                android:id="@+id/action_2"
+                android:icon="@android:drawable/btn_star_big_off"
+                android:title="退出"
+                app:showAsAction="ifRoom"/>
+        </menu>
+
+    </item>
+</menu>

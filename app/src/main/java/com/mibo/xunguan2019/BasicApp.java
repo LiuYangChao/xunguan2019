@@ -10,6 +10,7 @@ import com.mibo.xunguan2019.db_holder.AppDB;
  */
 
 public class BasicApp extends Application {
+
     private AppExecutors mAppExecutors;
 
     @Override

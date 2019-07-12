@@ -15,11 +15,21 @@ public class TaskEntity {
     @PrimaryKey(autoGenerate = true)
     private int id;
     @ColumnInfo(name = "name")
-    private String name;                                     //任务名称
-    @ColumnInfo(name = "xId")
-    private String xId;                                         //任务ID
+    private String name;                                                    //任务名称
+    @ColumnInfo(name = "serverTaskId")
+    private String serverTaskId;                                         //任务ID(不用了)
     @ColumnInfo(name = "serverUserId")
-    private String serverUserId;                          //服务端的人员ID
+    private String serverUserId;                                        //服务端的人员ID
+    @ColumnInfo(name = "xid")
+    private String xid;                                                         //任务ID
+
+    public String getXid() {
+        return xid;
+    }
+
+    public void setXid(String xid) {
+        this.xid = xid;
+    }
 
     public int getId() {
         return id;
@@ -37,12 +47,12 @@ public class TaskEntity {
         this.name = name;
     }
 
-    public String getxId() {
-        return xId;
+    public String getServerTaskId() {
+        return serverTaskId;
     }
 
-    public void setxId(String xId) {
-        this.xId = xId;
+    public void setServerTaskId(String serverTaskId) {
+        this.serverTaskId = serverTaskId;
     }
 
     public String getServerUserId() {

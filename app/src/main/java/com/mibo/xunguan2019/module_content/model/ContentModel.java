@@ -13,6 +13,11 @@ import java.util.List;
 
 public class ContentModel {
 
+    private String androidTableId;      //Android端表单ID
+    private String padId;                      //Android端平板唯一ID
+    private String instanceId;              //NodeEntity的instanceId
+    private String instanceName;
+    private String userIds;                    //用户Id集合
     private List<HeadEntity> headEntityList;
     private List<RowEntity> rowEntityList;
 
@@ -28,7 +33,47 @@ public class ContentModel {
         return rowEntityList;
     }
 
+    public String getUserIds() {
+        return userIds;
+    }
+
+    public void setUserIds(String userIds) {
+        this.userIds = userIds;
+    }
+
     public void setRowEntityList(List<RowEntity> rowEntityList) {
         this.rowEntityList = rowEntityList;
+    }
+
+    public String getAndroidTableId() {
+        return androidTableId;
+    }
+
+    public void setAndroidTableId(String androidTableId) {
+        this.androidTableId = androidTableId;
+    }
+
+    public String getPadId() {
+        return padId;
+    }
+
+    public void setPadId(String padId) {
+        this.padId = padId;
+    }
+
+    public String getInstanceId() {
+        return instanceId;
+    }
+
+    public void setInstanceId(String instanceId) {
+        this.instanceId = instanceId;
+    }
+
+    public String getInstanceName() {
+        return instanceName;
+    }
+
+    public void setInstanceName(String instanceName) {
+        this.instanceName = instanceName;
     }
 }

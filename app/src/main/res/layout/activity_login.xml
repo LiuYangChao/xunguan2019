@@ -1,37 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:orientation="horizontal"
+    android:background="@drawable/background_gradient"
     tools:context="com.mibo.xunguan2019.module_login.LoginActivity">
 
-    <EditText
-        android:id="@+id/username"
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="10%"
-        app:layout_widthPercent="40%"
-        android:text="用户名"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_color"
+            android:text="培 训 管 理 系 统"
+            android:textSize="@dimen/sp_50"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bg_color"
+            android:textSize="@dimen/sp_24"
+            android:text="Training management system"/>
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/password"
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="10%"
-        app:layout_widthPercent="40%"
-        android:layout_below="@+id/username"
-        android:text="密码"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
 
-    <TextView
-        android:id="@+id/loginBtn"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_heightPercent="10%"
-        app:layout_widthPercent="40%"
-        android:layout_below="@+id/password"
-        android:gravity="center"
-        android:text="登录"/>
+        <LinearLayout
+            android:layout_width="500dp"
+            android:layout_height="300dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_card_shape">
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_marginLeft="@dimen/dp_32"
+                android:layout_marginRight="@dimen/dp_32"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/bg_color"
+                android:hint="用户名"/>
 
-</android.support.percent.PercentRelativeLayout>
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_32"
+                android:layout_marginRight="@dimen/dp_32"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/bg_color"
+                android:hint="密码"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_50"
+                android:layout_gravity="center">
+                <ImageView
+                    android:id="@+id/loginBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_login_in"
+                    android:layout_marginRight="@dimen/dp_60"/>
+                <ImageView
+                    android:id="@+id/loginOutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_login_out"
+                    android:layout_marginLeft="@dimen/dp_60"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

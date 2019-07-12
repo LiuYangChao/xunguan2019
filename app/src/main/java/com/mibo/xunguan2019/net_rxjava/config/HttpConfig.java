@@ -8,6 +8,7 @@ package com.mibo.xunguan2019.net_rxjava.config;
 public class HttpConfig {
 
     public static int HTTP_TIME=30000;
-    public static String BASE_URL="http://192.168.1.100:8080/xunguan2019/";
+//    public static String BASE_URL="http://192.168.1.100:8080/xunguan2019/";
+    public static String BASE_URL="http://192.168.1.56:8080/OrientTDM/";
 
 }

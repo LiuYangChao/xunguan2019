@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_bg7"
+    android:orientation="horizontal"
+    tools:context="com.mibo.xunguan2019.module_home.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/login_bg9">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_tree"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <!--android:layout_margin="@dimen/dp_4"-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/dp_4"
+        android:background="@drawable/background_home_card">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_tree_template"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/dp_4"
+        android:background="@drawable/background_home_card">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/home_tree_instance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>
